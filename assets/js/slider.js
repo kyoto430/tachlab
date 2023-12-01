@@ -1,31 +1,36 @@
 console.log('slider running...');
 
-new Swiper('.custom__slider', {
+new Swiper('.trust__slider', {
   loop: true,
-  // pagination: {
-  //   el: '.s__p--3',
-  //   clickable: true,
-  // },
   navigation: {
-    prevEl: '.slider__btn-prev',
-    nextEl: '.slider__btn-next',
+    prevEl: '.slider__btn-prev--1',
+    nextEl: '.slider__btn-next--1',
   },
   uniqueNavElements: false,
   breakpoints: {
     1920: {
-      slidesPerView: 1,
+      slidesPerView: 4,
     },
     1280: {
-      slidesPerView: 1,
+      slidesPerView: 4,
     },
     1230: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     375: {
       slidesPerView: 1,
     },
   },
+});
+
+new Swiper('.preview__slider', {
+  loop: true,
+  navigation: {
+    prevEl: '.slider__btn-prev--2',
+    nextEl: '.slider__btn-next--2',
+  },
+  uniqueNavElements: false,
 });
