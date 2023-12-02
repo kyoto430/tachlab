@@ -37,20 +37,22 @@ burger();
 
 function showAll() {
   document.addEventListener('DOMContentLoaded', function () {
-    const showMoreButton = document.getElementById('showMoreButton');
+    const showMoreButton = document.querySelectorAll('.btn-show');
     const hiddenElements = document.querySelectorAll('.block-hidden');
 
-    showMoreButton.addEventListener('click', function () {
-      hiddenElements.forEach(function (element) {
-        if (element.style.transform !== 'scale(1)') {
-          element.style.position = 'initial';
-          element.style.transform = 'scale(1)';
-          showMoreButton.innerText = 'Скрыть текст';
-        } else {
-          element.style.position = 'absolute';
-          element.style.transform = 'scale(0)';
-          showMoreButton.innerText = 'Показать больше';
-        }
+    showMoreButton.forEach(function (el) {
+      el.addEventListener('click', function () {
+        hiddenElements.forEach(function (element) {
+          if (element.style.transform !== 'scale(1)') {
+            element.style.position = 'initial';
+            element.style.transform = 'scale(1)';
+            el.innerText = 'Скрыть';
+          } else {
+            element.style.position = 'absolute';
+            element.style.transform = 'scale(0)';
+            el.innerText = 'Показать больше';
+          }
+        });
       });
     });
   });
