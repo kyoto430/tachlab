@@ -60,3 +60,24 @@ new Swiper('.likes__slider', {
     },
   },
 });
+
+new Swiper('.preview-card__slider', {
+  navigation: {
+    prevEl: '.slider__btn-prev--4',
+    nextEl: '.slider__btn-next--4',
+  },
+  thumbs: {
+    swiper: '.preview-card__slider-2',
+  },
+});
+
+new Swiper('.preview-card__slider-2', {
+  spaceBetween: 25,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    prevEl: '.slider__btn-prev--4',
+    nextEl: '.slider__btn-next--4',
+  },
+});

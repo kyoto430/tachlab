@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="content">
+  <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <script src="./assets/js/index.js" defer></script>
+  <script src="./assets/js/swiper-bundle.min.js" defer></script>
+  <script src="./assets/js/slider.js" defer></script>
+  <title>Tachlab</title>
+</head>
+
+<body>
+  <header class="header container-xl">
+    <div class="header__container container">
+      <div class="overlay"></div>
+      <div class="menu__burger">
+        <span></span>
+      </div>
+      <nav class="main__nav">
+        <a class="header__logo" href="./index.html">
+          <img src="./assets/images/icons/logo-header.svg" alt="Логотип">
+          <span class="text-hidden">На главную</span>
+        </a>
+        <ul class="location__nav">
+          <li>
+            <span class="location__title">Санкт-Петербург</span>
+          </li>
+          <li>
+            <a class="phone__link" href="tel:+88003026989">8 800 302 69 89</a>
+          </li>
+        </ul>
+        <ul class="site__nav">
+          <li class="menu__item">
+            <a class="menu__link link menu-active " href="./catalog.html">Каталог</a>
+            <ul class="sub-menu__list">
+              <li>
+                <a class="sub-menu__link link" href="#">Встраиваемый сенсорный монитор</a>
+                <div class="sub-submenu__item">
+                  <div class="sub-submenu__cards">
+                    <div class="sub-submenu__card">
+                      <a href="#">
+                        <img src="./assets/images/card/01.jpg" alt="01">
+                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      </a>
+                    </div>
+                    <div class="sub-submenu__card">
+                      <a href="#">
+                        <img src="./assets/images/card/01.jpg" alt="01">
+                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      </a>
+                    </div>
+                    <div class="sub-submenu__card">
+                      <a href="#">
+                        <img src="./assets/images/card/01.jpg" alt="01">
+                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      </a>
+                    </div>
+                    <div class="sub-submenu__card">
+                      <a href="#">
+                        <img src="./assets/images/card/01.jpg" alt="01">
+                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Настенный сенсорный монитор</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Стекло сенсорное</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Рамка сенсорная</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Пленка сенсорная</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Моноблоки</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Интерактивные панели</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Кастомные сенсорные изделия</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Аксессуары</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#info">Информация</a>
+            <ul class="sub-menu__list">
+              <li>
+                <a class="sub-menu__link link" href="#">Оплата и доставка</a>
+                <ul class="sub-submenu__list">
+                  <li>
+                    <a class="sub-submenu__link link" href="#">Способы доставки</a>
+                  </li>
+                  <li>
+                    <a class="sub-submenu__link link" href="#">Стоимость доставки</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Комплектация к встраиваемому монитору</a>
+              </li>
+              <li>
+                <a class="sub-menu__link link" href="#">Виды покрытий для сенсорных стекол</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#about">О компании</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#delivery">Доставка</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user__nav">
+          <li>
+            <a class="search__link" href="#">
+              <img src="./assets/images/icons/icon-search.svg" alt="icon search">
+            </a>
+          </li>
+          <li>
+            <a class="cart__link" href="#">
+              <span class="cart-badge">2</span>
+              <img src="./assets/images/icons/icon-cart.svg" alt="icon cart">
+              <span class="cart__title">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main container">
+    <section class="breadcrumbs">
+      <div class="breadcrumbs__wrapper container">
+        <ul class="breadcrumb">
+          <li>
+            <a class="breadcrumb__link" href="./index.html">Главная</a>
+          </li>
+          <li>
+            <a class="breadcrumb__link" href="./catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="breadcrumb__link" href="./catalog-card.html">Встраиваемый сенсорный монитор</a>
+          </li>
+          <li>
+            <a class="breadcrumb__link breadcrumb__link--active" href="./catalog-card.html">10.1″ Встраиваемый сенсорный
+              монитор</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="preview-card">
+      <div class="preview-card__wrapper container">
+        <h2 class="catalog__title-1">10.1″ Встраиваемый сенсорный монитор</h2>
+        <div class="preview-card__inner">
+          <!-- SLIDER -->
+          <div class="slider__wrapper">
+            <div class="preview-card__slider swiper">
+              <div class="swiper-wrapper preview-card__slider-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/01.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/02.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/03.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/04.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/05.jpg" alt="slider img 01">
+                </div>
+              </div>
+              <div class="preview-card__slider-nav">
+                <div class="swiper-button-prev slider__btn-prev--4"></div>
+                <div class="swiper-button-next slider__btn-next--4"></div>
+              </div>
+            </div>
+            <div class="preview-card__slider-2 swiper">
+              <div class="swiper-wrapper preview-card__slider-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/01.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/02.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/03.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/04.jpg" alt="slider img 01">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/card/05.jpg" alt="slider img 01">
+                </div>
+              </div>
+              <div class="preview-card__slider-nav">
+                <div class="swiper-button-prev slider__btn-prev--4"></div>
+                <div class="swiper-button-next slider__btn-next--4"></div>
+              </div>
+            </div>
+          </div>
+          <!-- SLIDER END -->
+          <div class="preview-card__card-wrapper">
+            <div class="preview-card__card-price">
+              <span class="preview-card__subtile">стоимость</span>
+              <span class="preview-card__title">55 555 P</span>
+            </div>
+            <div class="preview-card__options">
+              <h4 class="options__title">Тип сенсорного стекла:</h4>
+              <div class="options__inputs">
+                <label>
+                  <input type="checkbox" name="option-1"> Стандартное
+                </label>
+                <label>
+                  <input type="checkbox" name="option-2"> Суперпрозрачное + 1.000 P
+                </label>
+                <label>
+                  <input type="checkbox" name="option-3"> Антиблик + 1.200 P
+                </label>
+                <label>
+                  <input type="checkbox" name="option-4"> Антиблик + Антиотпечатки + 1.600 P
+                </label>
+                <label>
+                  <input type="checkbox" name="option-5"> Антиблик + Суперпрозрачное +
+                  Антиотпечатки + 2.100 P
+                </label>
+              </div>
+            </div>
+            <div class="catalog__card-buttons">
+              <div class="catalog__card-left">
+                <button class="catalog__btn-minus"><span>-</span></button>
+                <span class="catalog__card-value">1</span>
+                <button class="catalog__btn-pluse"><span>+</span></button>
+              </div>
+              <button class="catalog__btn-cart">В корзину</button>
+            </div>
+            <div class="fast__buttons">
+              <a class="fast__btn" href="#">Купить в один клик</a>
+              <a class="fast__btn" href="#">Запросить оптовую цену</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tabs-cards">
+      <div class="tabs__wrapper container">
+        <div class="tabs">
+          <a href="#props" class="tab" onclick="scrollTab(this)">Характеристики</a>
+          <a href="#desc" class="tab" onclick="scrollTab(this)">Описание</a>
+          <a href="#docs" class="tab" onclick="scrollTab(this)">Документация</a>
+          <a href="#items" class="tab" onclick="scrollTab(this)">Сопутствующие товары</a>
+          <a href="#delivery" class="tab" onclick="scrollTab(this)">Доставка</a>
+        </div>
+      </div>
+    </section>
+    <section class="props">
+      <div class="props-content" id="props">
+        <h2 class="catalog__title-2">Характеристики</h2>
+        <div class="props-content__inner">
+          <ul class="props-content__list">
+            <li class="props-content__list-item">
+              <span class="props-content__title">Модель</span>
+              <span class="props-content__subtitle">TL-CMC101-B</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Диагональ</span>
+              <span class="props-content__subtitle">10.1 дюйма</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Разрешение</span>
+              <span class="props-content__subtitle">1280 × 800</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Технология</span>
+              <span class="props-content__subtitle">Проекционно-емкостная</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Кол-во касаний</span>
+              <span class="props-content__subtitle">10</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Цвет</span>
+              <span class="props-content__subtitle">Черный</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Соотношение сторон</span>
+              <span class="props-content__subtitle">16:10</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Яркость</span>
+              <span class="props-content__subtitle">330 кд/м²</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Рабочая температура</span>
+              <span class="props-content__subtitle">5～35°C</span>
+            </li>
+          </ul>
+          <ul class="props-content__list">
+            <li class="props-content__list-item">
+              <span class="props-content__title">Модель</span>
+              <span class="props-content__subtitle">TL-CMC101-B</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Диагональ</span>
+              <span class="props-content__subtitle">10.1 дюйма</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Разрешение</span>
+              <span class="props-content__subtitle">1280 × 800</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Технология</span>
+              <span class="props-content__subtitle">Проекционно-емкостная</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Кол-во касаний</span>
+              <span class="props-content__subtitle">10</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Цвет</span>
+              <span class="props-content__subtitle">Черный</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Соотношение сторон</span>
+              <span class="props-content__subtitle">16:10</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Яркость</span>
+              <span class="props-content__subtitle">330 кд/м²</span>
+            </li>
+            <li class="props-content__list-item">
+              <span class="props-content__title">Рабочая температура</span>
+              <span class="props-content__subtitle">5～35°C</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="description" id="desc">
+      <div class="description__wrapper container">
+        <h2 class="catalog__title-2">Описание</h2>
+        <div class="description__inner">
+          <h3 class="description__title">10.1-дюймовый Сенсорный монитор TachLab TL-CMC101-B</h3>
+          <div class="description__text-wrapper">
+            <p class="description__text">Монитор TL-CMC101-B с диагональю 10.1 дюйма работает по проекционно-емкостной
+              технологии (PCAP) с
+              поддержкой режима мультитач,
+              до 10 одновременных касаний. Вы можете менять масштаб, перелистывать, открывать программы, увеличивать
+              изображения, перемещаться
+              по каталогам и т.д.</p>
+            <p class="description__text">
+              РаботоспособностьРежим работы 24/7 без перебоев.
+            </p>
+            <p class="description__text">Лаконичный дизайн и простота характеризует уникальные решения без излишеств.
+              Что позволяет применять
+              монитор для различных задач
+              и сфер.</p>
+            <p class="description__text">
+              Монитор 10.1 дюйм подходит для тех, кто в поисках недорогой, но надежной сенсорной панели.
+            </p>
+            <p class="description__text">Купить промышленный монитор с сенсорным экраном для широкого применения:</p>
+            <ul class="description__list">
+              <li>для производства;</li>
+              <li>встраиваемый LCD монитор 10.1 дюйма с сенсорным дисплеем используется для станков с ЧПУ, АРМ;</li>
+              <li>для торговли;</li>
+              <li>для музейно-выставочных комплексов.</li>
+            </ul>
+            <p class="description__text">Промышленные мониторы общего назначения широко эксплуатируются при поведении
+              выставок, вернисажей,
+              экспозиций в музеях.
+              В автосалонах, мотор-шоу, авиавыставках и на форумах.</p>
+            <p class="description__text">Интерактивный монитор 10.1” устанавливается на вендинговое оборудование,
+              сенсорные столы и устройства
+              самообслуживания.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="documents" id="docs">
+      <div class="documents__wrapper container">
+        <h2 class="catalog__title-2">Документация</h2>
+        <ul class="documents__list">
+          <li class="documents__list-item">
+            <a class="documents__item-link" href="#" download="Чертеж товара">Чертеж товара</a>
+          </li>
+          <li class="documents__list-item">
+            <a class="documents__item-link" href="#" download="Презентация товара">Презентация товара</a>
+          </li>
+          <li class="documents__list-item">
+            <a class="documents__item-link" href="#" download="Презентация товара">Презентация товара</a>
+          </li>
+          <li class="documents__list-item">
+            <a class="documents__item-link" href="#" download="Чертеж товара">Чертеж товара</a>
+          </li>
+          <li class="documents__list-item">
+            <a class="documents__item-link" href="#" download="Чертеж товара">Чертеж товара</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="likes" id="items">
+      <div class="likes__wrapper container">
+        <h2 class="catalog__title-2">Сопустствующие товары</h2>
+        <!-- SLIDER -->
+        <div class="slider__wrapper">
+          <div class="likes__slider swiper">
+            <div class="swiper-wrapper likes__slider-wrapper">
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalog__card">
+                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                  <div class="catalog__card-desc">
+                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                    <span class="catalog__card-code">арт. 00000000000-0000</span>
+                    <span class="catalog__card-price">20 000 ₽</span>
+                  </div>
+                  <div class="catalog__card-buttons">
+                    <div class="catalog__card-left">
+                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <span class="catalog__card-value">1</span>
+                      <button class="catalog__btn-pluse"><span>+</span></button>
+                    </div>
+                    <button class="catalog__btn-cart">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="likes__slider-nav">
+            <div class="slider__btn-prev--3"></div>
+            <div class="slider__btn-next--3"></div>
+          </div>
+        </div>
+        <!-- SLIDER END -->
+      </div>
+    </section>
+    <section class="delivery" id="delivery">
+      <div class="delivery__wrapper container">
+        <h2 class="catalog__title-2">Доставка</h2>
+        <div class="delivery__inner">
+          <div class="delivery__inner-wrapper">
+            <h3 class="delivery__title">Способы доставки</h3>
+            <ul class="delivery__list">
+              <li class="delivery__list-item">
+                <span class="delivery__subtitle">Транспортная компания</span>
+                <p class="delivery__text">Для крупногабаритных грузов, весом от 60кг и объемов от 0,6 кв.м.доставка до
+                  терминала транспортной
+                  компании в Санкт-Петербурге бесплатно, при покупке от 60 000 руб.</p>
+              </li>
+              <li class="delivery__list-item">
+                <span class="delivery__subtitle">Доставка курьером</span>
+                <p class="delivery__text">Для мелкогабаритных грузов, весом до 40кг и объемом до 0.4кв.м.</p>
+              </li>
+              <li class="delivery__list-item">
+                <span class="delivery__subtitle">Самовывоз Бесплатно</span>
+              </li>
+            </ul>
+          </div>
+          <div class="delivery__inner-wrapper">
+            <h3 class="delivery__title">Способы оплаты</h3>
+            <ul class="delivery__list">
+              <li class="delivery__list-item">
+                <span class="delivery__subtitle">Безналичный расчет</span>
+                <p class="delivery__text">Оплата по выставленному счету (для юридических лиц). Работаем с НДС.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="delivery__inner-wrapper">
+            <h3 class="delivery__title">Регионы доставки</h3>
+            <ul class="delivery__list">
+              <li class="delivery__list-item">
+                <span class="delivery__subtitle">Россия, все регионы.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__wrapper container">
+        <img src="./assets/images/feedback/01.jpg" alt="man">
+        <form class="feedback__form">
+          <div class="feedback__desc">
+            <h3 class="feedback__title">Ищете решение под ключ?</h3>
+            <p class="feedback__text">Поставим вам экраны, ПК и напишем программное обеспечение под ваши нужды.</p>
+          </div>
+          <div class="feedback__inputs">
+            <input type="text" name="name" id="name" placeholder="Ваше имя">
+            <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
+            <input type="email" name="email" id="email" placeholder="Ваш E-mail">
+            <textarea name="message" id="message" placeholder="Ваше сообщение (необязательно)"></textarea>
+          </div>
+          <button class="feedback__btn">Отправить</button>
+          <div class="feedback__inner">
+            <a class="feedback__link" href="#">Сообщить о нарушении</a>
+            <span>Нажимая кнопку “Отправить” вы даете согласие на обработку данных</span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container-xl">
+    <div class="footer__container container">
+      <div class="footer__left">
+        <a class="footer__logo" href="./index.html">
+          <img src="./assets/images/icons/logo-footer.svg" alt="Логотип">
+          <span class="text-hidden">На главную</span>
+        </a>
+        <div class="footer__socials">
+          <span>Мы в соцсетях:</span>
+          <ul class="footer__socials-list">
+            <li>
+              <a class="footer__socials-link" href="#">
+                <img src="./assets/images/icons/icon-vk.svg" alt="Вконтакте">
+                <span class="text-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__socials-link" href="#">
+                <img src="./assets/images/icons/icon-youtube.svg" alt="Youtube">
+                <span class="text-hidden">Youtube</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__socials-link" href="#">
+                <img src="./assets/images/icons/icon-telegram.svg" alt="Telegram">
+                <span class="text-hidden">Telegram</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__socials-link" href="#">
+                <img src="./assets/images/icons/icon-dzen.svg" alt="Дзен">
+                <span class="text-hidden">Дзен</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer__socials-link" href="#">
+                <img src="./assets/images/icons/icon-pinterest.svg" alt="Printerest">
+                <span class="text-hidden">Printerest</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-top">
+          <ul class="footer__list">
+            <li>
+              <a class="footer__list-link icon-phone" href="tel:+88003026989">Звоните: 8 (800) 302-69-89</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-email" href="mailto:info@tachlab.ru">Пишите: info@tachlab.ru</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-delivery" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-info" href="#">Информация</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-whatsapp" href="#">WhatsApp 8 (800) 302-69-89</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-time" href="#">Пн - Пт: с 10:00 до 18:00</a>
+            </li>
+            <li>
+              <a class="footer__list-link icon-pay" href="#">Оплата</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right-bottom">
+          <address class="footer__adress">
+            <a href="#">
+              Адрес офиса: г. Санкт-Петербург, шоссе Революции, дом 69, литер А, помещение 40-Н, офис 4
+            </a>
+          </address>
+          <div class="footer__company">
+            <a href="#">
+              <span>Разработано в Web-ra.com</span>
+              <img src="./assets/images/icons/icon-webra.svg" alt="Логотип Webra">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

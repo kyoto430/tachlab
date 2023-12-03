@@ -59,3 +59,14 @@ function showAll() {
 }
 
 showAll();
+
+function scrollTab(clickedTab) {
+  // Убрать класс 'active' у всех табов
+  const allTabs = document.querySelectorAll('.tab');
+  allTabs.forEach((tab) => {
+    tab.classList.remove('props-active');
+  });
+
+  // Добавить класс 'active' к выбранному табу
+  clickedTab.classList.add('props-active');
+}
