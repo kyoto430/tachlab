@@ -70,3 +70,4 @@ function scrollTab(clickedTab) {
   // Добавить класс 'active' к выбранному табу
   clickedTab.classList.add('props-active');
 }
+

@@ -146,7 +146,7 @@
     </div>
   </header>
   <main class="main container">
-    <section class="breadcrumbs">
+    <div class="breadcrumbs">
       <div class="breadcrumbs__wrapper container">
         <ul class="breadcrumb">
           <li>
@@ -157,7 +157,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
     <section class="catalog">
       <div class="catalog__wrapper container">
         <h2 class="catalog__title-1">Каталог товаров</h2>
@@ -320,12 +320,14 @@
           </div>
           <div class="catalog__cards">
             <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -336,12 +338,32 @@
               </div>
             </div>
             <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
+              <div class="catalog__card-buttons">
+                <div class="catalog__card-left">
+                  <button class="catalog__btn-minus"><span>-</span></button>
+                  <span class="catalog__card-value" id="counter1">1</span>
+                  <button class="catalog__btn-pluse"><span>+</span></button>
+                </div>
+                <button class="catalog__btn-cart">В корзину</button>
               </div>
+            </div>
+            <div class="catalog__card">
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -352,12 +374,14 @@
               </div>
             </div>
             <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -368,12 +392,14 @@
               </div>
             </div>
             <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -384,28 +410,14 @@
               </div>
             </div>
             <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
-              <div class="catalog__card-buttons">
-                <div class="catalog__card-left">
-                  <button class="catalog__btn-minus"><span>-</span></button>
-                  <span class="catalog__card-value">1</span>
-                  <button class="catalog__btn-pluse"><span>+</span></button>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
                 </div>
-                <button class="catalog__btn-cart">В корзину</button>
-              </div>
-            </div>
-            <div class="catalog__card">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -416,12 +428,14 @@
               </div>
             </div>
             <div class="catalog__card block-hidden">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -432,12 +446,14 @@
               </div>
             </div>
             <div class="catalog__card block-hidden">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -448,12 +464,14 @@
               </div>
             </div>
             <div class="catalog__card block-hidden">
-              <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-              <div class="catalog__card-desc">
-                <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                <span class="catalog__card-code">арт. 00000000000-0000</span>
-                <span class="catalog__card-price">20 000 ₽</span>
-              </div>
+              <a href="./catalog-card.html">
+                <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                <div class="catalog__card-desc">
+                  <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                  <span class="catalog__card-code">арт. 00000000000-0000</span>
+                  <span class="catalog__card-price">20 000 ₽</span>
+                </div>
+              </a>
               <div class="catalog__card-buttons">
                 <div class="catalog__card-left">
                   <button class="catalog__btn-minus"><span>-</span></button>
@@ -477,12 +495,14 @@
             <div class="swiper-wrapper likes__slider-wrapper">
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -495,12 +515,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -513,12 +535,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -531,12 +555,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -549,12 +575,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -567,12 +595,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -585,12 +615,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
@@ -603,12 +635,14 @@
               </div>
               <div class="swiper-slide">
                 <div class="catalog__card">
-                  <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
-                  <div class="catalog__card-desc">
-                    <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                    <span class="catalog__card-code">арт. 00000000000-0000</span>
-                    <span class="catalog__card-price">20 000 ₽</span>
-                  </div>
+                  <a href="./catalog-card.html">
+                    <img src="./assets/images/catalog/catalog-01.png" alt="slider img 01">
+                    <div class="catalog__card-desc">
+                      <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
+                      <span class="catalog__card-code">арт. 00000000000-0000</span>
+                      <span class="catalog__card-price">20 000 ₽</span>
+                    </div>
+                  </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
                       <button class="catalog__btn-minus"><span>-</span></button>
