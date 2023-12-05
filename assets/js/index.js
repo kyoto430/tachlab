@@ -37,12 +37,13 @@ burger();
 
 function showAll() {
   document.addEventListener('DOMContentLoaded', function () {
-    const showMoreButton = document.querySelectorAll('.btn-show');
+    const showMoreButtons = document.querySelectorAll('.btn-show');
     const hiddenElements = document.querySelectorAll('.block-hidden');
     const opacityElements = document.querySelectorAll('.seo__inner-2');
 
-    showMoreButton.forEach(function (el) {
+    showMoreButtons.forEach(function (el) {
       el.addEventListener('click', function () {
+        let btnShow = el;
         hiddenElements.forEach(function (element) {
           if (element.style.transform !== 'scale(1)') {
             opacityElements.forEach(function (el) {
@@ -51,6 +52,7 @@ function showAll() {
             element.style.position = 'initial';
             element.style.transform = 'scale(1)';
             el.innerText = 'Скрыть';
+            btnShow.style.marginTop = '0px';
           } else {
             opacityElements.forEach(function (el) {
               el.style.opacity = '0.3';
@@ -58,6 +60,7 @@ function showAll() {
             element.style.position = 'absolute';
             element.style.transform = 'scale(0)';
             el.innerText = 'Показать больше';
+            btnShow.style.marginTop = '-40px';
           }
         });
       });
