@@ -1526,12 +1526,13 @@ img {
 }
 
 .catalog__card {
+  max-width: 328px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
-  padding: 14px 24px;
+  padding: 14px 23px;
   background: var(--color-white);
 }
 
