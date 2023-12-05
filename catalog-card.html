@@ -9,6 +9,8 @@
   <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <script src="./assets/js/fullImage.js" defer></script>
   <script src="./assets/js/index.js" defer></script>
   <script src="./assets/js/swiper-bundle.min.js" defer></script>
   <script src="./assets/js/slider.js" defer></script>
@@ -145,7 +147,7 @@
       </nav>
     </div>
   </header>
-  <main class="main container">
+  <main class="main">
     <div class="breadcrumbs">
       <div class="breadcrumbs__wrapper container">
         <ul class="breadcrumb">
@@ -174,19 +176,29 @@
             <div class="preview-card__slider swiper">
               <div class="swiper-wrapper preview-card__slider-wrapper">
                 <div class="swiper-slide">
-                  <img src="./assets/images/card/01.jpg" alt="slider img 01">
+                  <img src="./assets/images/card/01.jpg" loading="lazy" alt="slider img 01">
+                  <a class="btn-size" href="./assets/images/card/01.jpg" data-fancybox>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./assets/images/card/02.jpg" alt="slider img 01">
+                  <img src="./assets/images/card/02.jpg" loading="lazy" alt="slider img 01">
+                  <a class="btn-size" href="./assets/images/card/02.jpg" data-fancybox>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./assets/images/card/03.jpg" alt="slider img 01">
+                  <img src="./assets/images/card/03.jpg" loading="lazy" alt="slider img 01">
+                  <a class="btn-size" href="./assets/images/card/03.jpg" data-fancybox>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./assets/images/card/04.jpg" alt="slider img 01">
+                  <img src="./assets/images/card/04.jpg" loading="lazy" alt="slider img 01">
+                  <a class="btn-size" href="./assets/images/card/04.jpg" data-fancybox>
+                  </a>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./assets/images/card/05.jpg" alt="slider img 01">
+                  <img src="./assets/images/card/05.jpg" loading="lazy" alt="slider img 01">
+                  <a class="btn-size" href="./assets/images/card/05.jpg" data-fancybox>
+                  </a>
                 </div>
               </div>
               <div class="preview-card__slider-nav">
@@ -247,9 +259,9 @@
             </div>
             <div class="catalog__card-buttons">
               <div class="catalog__card-left">
-                <button class="catalog__btn-minus"><span>-</span></button>
-                <span class="catalog__card-value">1</span>
-                <button class="catalog__btn-pluse"><span>+</span></button>
+                <button class="catalog__btn-minus" onclick="decrement('counter1')"><span></span></button>
+                <span class="catalog__card-value" id="counter1">1</span>
+                <button class="catalog__btn-pluse" onclick="increment('counter1')"><span></span></button>
               </div>
               <button class="catalog__btn-cart">В корзину</button>
             </div>
@@ -273,7 +285,7 @@
       </div>
     </div>
     <section class="props">
-      <div class="props-content" id="props">
+      <div class="props-content container" id="props">
         <h2 class="catalog__title-2">Характеристики</h2>
         <div class="props-content__inner">
           <ul class="props-content__list">
@@ -417,7 +429,7 @@
         </ul>
       </div>
     </section>
-    <section class="likes">
+    <section class="likes" id="items">
       <div class="likes__wrapper container">
         <h2 class="catalog__title-2">Вам может понравиться</h2>
         <!-- SLIDER -->
@@ -436,9 +448,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -456,9 +468,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -476,9 +488,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -496,9 +508,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -516,9 +528,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -536,9 +548,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -556,9 +568,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -576,9 +588,9 @@
                   </a>
                   <div class="catalog__card-buttons">
                     <div class="catalog__card-left">
-                      <button class="catalog__btn-minus"><span>-</span></button>
+                      <button class="catalog__btn-minus"><span></span></button>
                       <span class="catalog__card-value">1</span>
-                      <button class="catalog__btn-pluse"><span>+</span></button>
+                      <button class="catalog__btn-pluse"><span></span></button>
                     </div>
                     <button class="catalog__btn-cart">В корзину</button>
                   </div>
@@ -638,7 +650,6 @@
     </section>
     <section class="feedback">
       <div class="feedback__wrapper container">
-        <img src="./assets/images/feedback/01.jpg" alt="man">
         <form class="feedback__form">
           <div class="feedback__desc">
             <h3 class="feedback__title">Ищете решение под ключ?</h3>
@@ -730,12 +741,12 @@
         </div>
         <div class="footer__right-bottom">
           <address class="footer__adress">
-            <a href="#">
+            <a href="https://yandex.by/maps/-/CDqUMGnd" target="_blank">
               Адрес офиса: г. Санкт-Петербург, шоссе Революции, дом 69, литер А, помещение 40-Н, офис 4
             </a>
           </address>
           <div class="footer__company">
-            <a href="#">
+            <a href="https://web-ra.ru/" target="_blank">
               <span>Разработано в Web-ra.com</span>
               <img src="./assets/images/icons/icon-webra.svg" alt="Логотип Webra">
             </a>
@@ -744,6 +755,7 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 
 </html>

@@ -11,11 +11,8 @@ new Swiper('.trust__slider', {
     1920: {
       slidesPerView: 4,
     },
-    1280: {
-      slidesPerView: 4,
-    },
     1230: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 2,

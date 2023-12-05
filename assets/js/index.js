@@ -1,4 +1,4 @@
-console.log('kyoto430 template js running...');
+console.log('js running...');
 
 // Меню бургер
 function burger() {
@@ -39,15 +39,22 @@ function showAll() {
   document.addEventListener('DOMContentLoaded', function () {
     const showMoreButton = document.querySelectorAll('.btn-show');
     const hiddenElements = document.querySelectorAll('.block-hidden');
+    const opacityElements = document.querySelectorAll('.seo__inner-2');
 
     showMoreButton.forEach(function (el) {
       el.addEventListener('click', function () {
         hiddenElements.forEach(function (element) {
           if (element.style.transform !== 'scale(1)') {
+            opacityElements.forEach(function (el) {
+              el.style.opacity = '1';
+            });
             element.style.position = 'initial';
             element.style.transform = 'scale(1)';
             el.innerText = 'Скрыть';
           } else {
+            opacityElements.forEach(function (el) {
+              el.style.opacity = '0.3';
+            });
             element.style.position = 'absolute';
             element.style.transform = 'scale(0)';
             el.innerText = 'Показать больше';
@@ -71,3 +78,29 @@ function scrollTab(clickedTab) {
   clickedTab.classList.add('props-active');
 }
 
+function hideBlocks() {
+  const elements = document.querySelectorAll('.catalog-preview__card');
+  if (window.innerWidth <= 1180) {
+    for (let i = 4; i < elements.length; i += 1) {
+      elements[i].classList.add('block-hidden');
+    }
+  }
+}
+
+hideBlocks();
+
+function increment(elementId) {
+  const counterElement = document.getElementById(elementId);
+  let counterValue = parseInt(counterElement.textContent);
+  counterValue++;
+  counterElement.textContent = counterValue;
+}
+
+function decrement(elementId) {
+  const counterElement = document.getElementById(elementId);
+  let counterValue = parseInt(counterElement.textContent);
+  if (counterValue >= 1) {
+    counterValue--;
+  }
+  counterElement.textContent = counterValue;
+}

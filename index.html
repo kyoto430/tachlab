@@ -145,7 +145,7 @@
       </nav>
     </div>
   </header>
-  <main class="main container">
+  <main class="main">
     <section class="preview">
       <div class="preview__wrapper container">
         <!-- SLIDER -->
@@ -281,6 +281,7 @@
             <img class="catalog-preview__img" src="./assets/images/catalog/catalog-09.png" alt="catalog 09">
           </div>
         </div>
+        <button class="btn-show" id="showMoreButton">Показать больше</button>
       </div>
     </section>
     <section class="about">
@@ -407,7 +408,6 @@
     </section>
     <section class="feedback">
       <div class="feedback__wrapper container">
-        <img src="./assets/images/feedback/01.jpg" alt="man">
         <form class="feedback__form">
           <div class="feedback__desc">
             <h3 class="feedback__title">Ищете решение под ключ?</h3>
@@ -415,8 +415,8 @@
           </div>
           <div class="feedback__inputs">
             <input type="text" name="name" id="name" placeholder="Ваше имя">
-            <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона" required>
-            <input type="email" name="email" id="email" placeholder="Ваш E-mail">
+            <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона">
+            <input type="email" name="email" id="email" placeholder="Ваш E-mail" required>
             <textarea name="message" id="message" placeholder="Ваше сообщение (необязательно)"></textarea>
           </div>
           <button class="feedback__btn">Отправить</button>
@@ -448,19 +448,25 @@
         </div>
         <div class="seo__inner-2">
           <h3 class="seo__subtitle-1">Заголовок H3</h3>
-          <div class="seo__text-wrapper block-hidden">
-            <p class="seo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula aliquam,
-              efficitur nunc ac,
-              porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
-              porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
-              pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices dictum
-              vel non mi.</p>
-            <p class="seo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula aliquam,
-              efficitur nunc ac,
-              porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
-              porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
-              pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices dictum
-              vel non mi.</p>
+          <div class="seo__text-wrapper">
+            <p class="seo__text"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula
+                aliquam,</span>
+              <span class="block-hidden">efficitur nunc ac,
+                porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
+                porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
+                pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices
+                dictum
+                vel non mi.</span>
+            </p>
+            <p class="seo__text"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula
+                aliquam,</span>
+              <span class="block-hidden">efficitur nunc ac,
+                porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
+                porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
+                pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices
+                dictum
+                vel non mi.</span>
+            </p>
           </div>
         </div>
         <div class="seo__inner-2 block-hidden">
@@ -559,12 +565,12 @@
         </div>
         <div class="footer__right-bottom">
           <address class="footer__adress">
-            <a href="#">
+            <a href="https://yandex.by/maps/-/CDqUMGnd" target="_blank">
               Адрес офиса: г. Санкт-Петербург, шоссе Революции, дом 69, литер А, помещение 40-Н, офис 4
             </a>
           </address>
           <div class="footer__company">
-            <a href="#">
+            <a href="https://web-ra.ru/" target="_blank">
               <span>Разработано в Web-ra.com</span>
               <img src="./assets/images/icons/icon-webra.svg" alt="Логотип Webra">
             </a>
