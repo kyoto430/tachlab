@@ -92,6 +92,17 @@ function hideBlocks() {
 
 hideBlocks();
 
+function changeFilter() {
+  const filterButtons = document.querySelectorAll('.catalog__filter-btn');
+  filterButtons.forEach(function (element) {
+    element.addEventListener('click', function () {
+      element.classList.toggle('filter-btn--active');
+    });
+  });
+}
+
+changeFilter();
+
 function increment(elementId) {
   const counterElement = document.getElementById(elementId);
   let counterValue = parseInt(counterElement.textContent);
