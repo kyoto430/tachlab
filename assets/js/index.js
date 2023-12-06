@@ -1,9 +1,23 @@
 console.log('js running...');
 
+function openSubMenus() {
+  if (window.innerWidth <= 1180) {
+    let arrows = document.querySelectorAll('.arrow');
+    arrows.forEach(function (element) {
+      element.addEventListener('click', function () {
+        element.nextElementSibling.classList.toggle('open-submenu');
+        this.classList.toggle('arrow-active');
+      });
+    });
+  }
+}
+
+openSubMenus();
+
 // Меню бургер
 function burger() {
   const burgerBtn = document.querySelector('.menu__burger');
-  const menu = document.querySelector('.main__nav');
+  const menu = document.querySelector('.main__nav-menu');
   const menuLinks = document.querySelectorAll('.menu__link');
   const overlay = document.querySelector('.overlay');
 
@@ -38,12 +52,14 @@ burger();
 function showAll() {
   document.addEventListener('DOMContentLoaded', function () {
     const showMoreButtons = document.querySelectorAll('.btn-show');
+    const showMoreSeoButton = document.querySelector('.seo__wrapper .btn-show');
     const hiddenElements = document.querySelectorAll('.block-hidden');
     const opacityElements = document.querySelectorAll('.seo__inner-2');
+    const hiddenElementsMob = document.querySelectorAll('.block-hidden-mob');
+    const opacityElementsMob = document.querySelectorAll('.block-oppacity');
 
     showMoreButtons.forEach(function (el) {
       el.addEventListener('click', function () {
-        let btnShow = el;
         hiddenElements.forEach(function (element) {
           if (element.style.transform !== 'scale(1)') {
             opacityElements.forEach(function (el) {
@@ -52,7 +68,7 @@ function showAll() {
             element.style.position = 'initial';
             element.style.transform = 'scale(1)';
             el.innerText = 'Скрыть';
-            btnShow.style.marginTop = '0px';
+            showMoreSeoButton.style.marginTop = '0px';
           } else {
             opacityElements.forEach(function (el) {
               el.style.opacity = '0.3';
@@ -60,9 +76,26 @@ function showAll() {
             element.style.position = 'absolute';
             element.style.transform = 'scale(0)';
             el.innerText = 'Показать больше';
-            btnShow.style.marginTop = '-40px';
+            showMoreSeoButton.style.marginTop = '-30px';
           }
         });
+        if (window.innerWidth <= 768) {
+          hiddenElementsMob.forEach(function (element) {
+            if (element.style.transform !== 'scale(1)') {
+              opacityElementsMob.forEach(function (el) {
+                el.style.opacity = '1';
+              });
+              element.style.position = 'initial';
+              element.style.transform = 'scale(1)';
+            } else {
+              opacityElementsMob.forEach(function (el) {
+                el.style.opacity = '0.3';
+              });
+              element.style.position = 'absolute';
+              element.style.transform = 'scale(0)';
+            }
+          });
+        }
       });
     });
   });

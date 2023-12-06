@@ -18,10 +18,138 @@
 <body>
   <header class="header container-xl">
     <div class="header__container container">
-      <div class="overlay"></div>
-      <div class="menu__burger">
-        <span></span>
-      </div>
+      <nav class="main-mob__nav">
+        <div class="overlay"></div>
+        <div class="menu__burger">
+          <span></span>
+        </div>
+        <a class="header__logo" href="./index.html">
+          <img src="./assets/images/icons/logo-header.svg" alt="Логотип">
+          <span class="text-hidden">На главную</span>
+        </a>
+        <ul class="location__nav">
+          <li>
+            <span class="location__title">Санкт-Петербург</span>
+          </li>
+          <li>
+            <a class="phone__link" href="tel:+88003026989">8 800 302 69 89</a>
+          </li>
+        </ul>
+        <nav class="main__nav-menu">
+          <ul class="site__nav">
+            <li class="menu__item">
+              <a class="menu__link link" href="./catalog.html">Каталог</a>
+              <span class="menu__arrow arrow"></span>
+              <ul class="sub-menu__list">
+                <li>
+                  <a class="sub-menu__link link" href="./catalog.html">Встраиваемый сенсорный монитор</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Настенный сенсорный монитор</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Стекло сенсорное</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Рамка сенсорная</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Пленка сенсорная</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Моноблоки</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Интерактивные панели</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Кастомные сенсорные изделия</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Информация</a>
+              <span class="menu__arrow arrow"></span>
+              <ul class="sub-menu__list">
+                <li>
+                  <a class="sub-menu__link link" href="#">Оплата и доставка</a>
+                  <ul class="sub-submenu__list">
+                    <li>
+                      <a class="sub-submenu__link link" href="#">Способы доставки</a>
+                    </li>
+                    <li>
+                      <a class="sub-submenu__link link" href="#">Стоимость доставки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Комплектация к встраиваемому монитору</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Виды покрытий для сенсорных стекол</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <span class="menu__link menu-mob__icon item-search">Поиск</span>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu-mob__icon item-location" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu-mob__icon item-cart" href="#">Корзина</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link item-phone" href="tel:+88003026989">8 800 302 69 89</a>
+            </li>
+          </ul>
+          <div class="menu__info">
+            <div class="menu__contacts">
+              <p class="menu__contacts-title">Контактная информация</p>
+              <div class="menu__contacts-wrapper">
+                <span class="location-menu__title">Санкт-Петербург</span>
+                <a class="email-menu" href="mailto:info@tachlab.ru">info@tachlab.ru</a>
+              </div>
+            </div>
+            <div class="menu__socials">
+              <p class="menu__socials-title">Мы в соцсетях:</p>
+              <ul class="menu__socials-list">
+                <li><a href="#"><img src="./assets/images/icons/icon-vk-blue.svg" alt="vk"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-youtube-blue.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-telegram-blue.svg" alt="Telegram"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-dzen-blue.svg" alt="dzen"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-print-blue.svg" alt="print"></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <ul class="user__nav">
+          <li>
+            <a class="search__link" href="#">
+              <img src="./assets/images/icons/icon-search.svg" alt="icon search">
+            </a>
+          </li>
+          <li>
+            <a class="cart__link" href="#">
+              <span class="cart-badge">2</span>
+              <img src="./assets/images/icons/icon-cart.svg" alt="icon cart">
+              <span class="cart__title">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <nav class="main__nav">
         <a class="header__logo" href="./index.html">
           <img src="./assets/images/icons/logo-header.svg" alt="Логотип">
@@ -281,7 +409,7 @@
             <img class="catalog-preview__img" src="./assets/images/catalog/catalog-09.png" alt="catalog 09">
           </div>
         </div>
-        <button class="btn-show" id="showMoreButton">Показать больше</button>
+        <button class="btn-show">Показать больше</button>
       </div>
     </section>
     <section class="about">
@@ -432,21 +560,33 @@
         <div class="seo__inner-1">
           <h2 class="seo__title">Блок с СЕО-текстом</h2>
           <div class="seo__text-wrapper">
-            <p class="seo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula aliquam,
-              efficitur nunc ac,
-              porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
-              porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
-              pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices dictum
-              vel non mi.</p>
-            <p class="seo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula aliquam,
-              efficitur nunc ac,
-              porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
-              porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
-              pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices dictum
-              vel non mi.</p>
+            <p class="seo__text"><span class="block-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam eu
+                ligula
+                aliquam,
+                efficitur nunc ac,
+                porttitor libero.<span> Aliquam sed magna imperdiet dolor viverra dictum.
+                  Vestibulum ante sem, tincidunt vitae
+                  porta ut, faucibus</span> </span><span class="block-hidden-mob">non elit. In ut eleifend lacus. Etiam
+                a
+                consequat risus. Suspendisse
+                massa
+                diam,
+                pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices
+                dictum
+                vel non mi.</span></p>
+            <p class="seo__text block-hidden-mob"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                eu ligula
+                aliquam,
+                efficitur nunc ac,
+                porttitor libero. Aliquam sed magna imperdiet dolor viverra dictum. Vestibulum ante sem, tincidunt vitae
+                porta ut, faucibus non elit. In ut eleifend lacus. Etiam a consequat risus. Suspendisse massa diam,
+                pharetra quis metus sit amet, rutrum egestas neque. Pellentesque sit amet sapien sed magna ultrices
+                dictum
+                vel non mi.</span></p>
           </div>
         </div>
-        <div class="seo__inner-2">
+        <div class="seo__inner-2 block-hidden-mob">
           <h3 class="seo__subtitle-1">Заголовок H3</h3>
           <div class="seo__text-wrapper">
             <p class="seo__text"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula
@@ -490,7 +630,7 @@
             </ul>
           </div>
         </div>
-        <button class="btn-show" id="showMoreButton">Показать больше</button>
+        <button class="btn-show">Показать больше</button>
       </div>
     </section>
   </main>
@@ -540,25 +680,25 @@
       <div class="footer__right">
         <div class="footer__right-top">
           <ul class="footer__list">
-            <li>
+            <li class="footer__phone">
               <a class="footer__list-link icon-phone" href="tel:+88003026989">Звоните: 8 (800) 302-69-89</a>
             </li>
-            <li>
+            <li class="footer__email">
               <a class="footer__list-link icon-email" href="mailto:info@tachlab.ru">Пишите: info@tachlab.ru</a>
             </li>
-            <li>
+            <li class="footer__delivery">
               <a class="footer__list-link icon-delivery" href="#">Доставка</a>
             </li>
-            <li>
+            <li class="footer__info">
               <a class="footer__list-link icon-info" href="#">Информация</a>
             </li>
-            <li>
+            <li class="footer__whatsapp">
               <a class="footer__list-link icon-whatsapp" href="#">WhatsApp 8 (800) 302-69-89</a>
             </li>
-            <li>
+            <li class="footer__time">
               <a class="footer__list-link icon-time" href="#">Пн - Пт: с 10:00 до 18:00</a>
             </li>
-            <li>
+            <li class="footer__pay">
               <a class="footer__list-link icon-pay" href="#">Оплата</a>
             </li>
           </ul>
