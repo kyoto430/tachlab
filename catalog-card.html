@@ -20,10 +20,139 @@
 <body>
   <header class="header container-xl">
     <div class="header__container container">
-      <div class="overlay"></div>
-      <div class="menu__burger">
-        <span></span>
-      </div>
+      <nav class="main-mob__nav">
+        <div class="overlay"></div>
+        <div class="menu__burger">
+          <span></span>
+        </div>
+        <a class="header__logo" href="./index.html">
+          <img src="./assets/images/icons/logo-header.svg" alt="Логотип">
+          <span class="text-hidden">На главную</span>
+        </a>
+        <ul class="location__nav">
+          <li>
+            <span class="location__title">Санкт-Петербург</span>
+          </li>
+          <li>
+            <a class="phone__link" href="tel:+88003026989">8 800 302 69 89</a>
+          </li>
+        </ul>
+        <nav class="main__nav-menu">
+          <ul class="site__nav">
+            <span class="menu__btn-back">Назад</span>
+            <li class="menu__item">
+              <a class="menu__link link menu-active" href="./catalog.html">Каталог</a>
+              <span class="menu__arrow arrow"></span>
+              <ul class="sub-menu__list">
+                <li>
+                  <a class="sub-menu__link link" href="./catalog.html">Встраиваемый сенсорный монитор</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Настенный сенсорный монитор</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Стекло сенсорное</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Рамка сенсорная</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Пленка сенсорная</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Моноблоки</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Интерактивные панели</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Кастомные сенсорные изделия</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Информация</a>
+              <span class="menu__arrow arrow"></span>
+              <ul class="sub-menu__list">
+                <li>
+                  <a class="sub-menu__link link" href="#">Оплата и доставка</a>
+                  <ul class="sub-submenu__list">
+                    <li>
+                      <a class="sub-submenu__link link" href="#">Способы доставки</a>
+                    </li>
+                    <li>
+                      <a class="sub-submenu__link link" href="#">Стоимость доставки</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Комплектация к встраиваемому монитору</a>
+                </li>
+                <li>
+                  <a class="sub-menu__link link" href="#">Виды покрытий для сенсорных стекол</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Доставка</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <span class="menu__link menu-mob__icon item-search">Поиск</span>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu-mob__icon item-location" href="#">Санкт-Петербург</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu-mob__icon item-cart" href="#">Корзина</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link item-phone" href="tel:+88003026989">8 800 302 69 89</a>
+            </li>
+          </ul>
+          <div class="menu__info">
+            <div class="menu__contacts">
+              <p class="menu__contacts-title">Контактная информация</p>
+              <div class="menu__contacts-wrapper">
+                <span class="location-menu__title">Санкт-Петербург</span>
+                <a class="email-menu" href="mailto:info@tachlab.ru">info@tachlab.ru</a>
+              </div>
+            </div>
+            <div class="menu__socials">
+              <p class="menu__socials-title">Мы в соцсетях:</p>
+              <ul class="menu__socials-list">
+                <li><a href="#"><img src="./assets/images/icons/icon-vk-blue.svg" alt="vk"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-youtube-blue.svg" alt="Youtube"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-telegram-blue.svg" alt="Telegram"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-dzen-blue.svg" alt="dzen"></a></li>
+                <li><a href="#"><img src="./assets/images/icons/icon-print-blue.svg" alt="print"></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <ul class="user__nav">
+          <li>
+            <a class="search__link" href="#">
+              <img src="./assets/images/icons/icon-search.svg" alt="icon search">
+            </a>
+          </li>
+          <li>
+            <a class="cart__link" href="#">
+              <span class="cart-badge">2</span>
+              <img src="./assets/images/icons/icon-cart.svg" alt="icon cart">
+              <span class="cart__title">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <nav class="main__nav">
         <a class="header__logo" href="./index.html">
           <img src="./assets/images/icons/logo-header.svg" alt="Логотип">
@@ -39,32 +168,32 @@
         </ul>
         <ul class="site__nav">
           <li class="menu__item">
-            <a class="menu__link link menu-active " href="./catalog.html">Каталог</a>
+            <a class="menu__link link menu-active" href="./catalog.html">Каталог</a>
             <ul class="sub-menu__list">
               <li>
-                <a class="sub-menu__link link" href="#">Встраиваемый сенсорный монитор</a>
+                <a class="sub-menu__link link" href="./catalog.html">Встраиваемый сенсорный монитор</a>
                 <div class="sub-submenu__item">
                   <div class="sub-submenu__cards">
                     <div class="sub-submenu__card">
-                      <a href="#">
+                      <a href="./catalog-card.html">
                         <img src="./assets/images/card/01.jpg" alt="01">
                         <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       </a>
                     </div>
                     <div class="sub-submenu__card">
-                      <a href="#">
+                      <a href="./catalog-card.html">
                         <img src="./assets/images/card/01.jpg" alt="01">
                         <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       </a>
                     </div>
                     <div class="sub-submenu__card">
-                      <a href="#">
+                      <a href="./catalog-card.html">
                         <img src="./assets/images/card/01.jpg" alt="01">
                         <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       </a>
                     </div>
                     <div class="sub-submenu__card">
-                      <a href="#">
+                      <a href="./catalog-card.html">
                         <img src="./assets/images/card/01.jpg" alt="01">
                         <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       </a>
@@ -99,7 +228,7 @@
             </ul>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#info">Информация</a>
+            <a class="menu__link link" href="#">Информация</a>
             <ul class="sub-menu__list">
               <li>
                 <a class="sub-menu__link link" href="#">Оплата и доставка</a>
@@ -121,13 +250,13 @@
             </ul>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#about">О компании</a>
+            <a class="menu__link link" href="#">О компании</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#delivery">Доставка</a>
+            <a class="menu__link link" href="#">Доставка</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link link" href="#contacts">Контакты</a>
+            <a class="menu__link link" href="#">Контакты</a>
           </li>
         </ul>
         <ul class="user__nav">
@@ -281,7 +410,7 @@
           <div class="preview-card__card-wrapper">
             <div class="preview-card__card-price">
               <span class="preview-card__subtile">стоимость</span>
-              <span class="preview-card__title">55 555 P</span>
+              <span class="preview-card__title">55 555&#8381;</span>
             </div>
             <div class="preview-card__options">
               <h4 class="options__title">Тип сенсорного стекла:</h4>
@@ -290,17 +419,17 @@
                   <input type="checkbox" name="option-1"> Стандартное
                 </label>
                 <label>
-                  <input type="checkbox" name="option-2"> Суперпрозрачное + 1.000 P
+                  <input type="checkbox" name="option-2"> Суперпрозрачное + 1.000&#8381;
                 </label>
                 <label>
-                  <input type="checkbox" name="option-3"> Антиблик + 1.200 P
+                  <input type="checkbox" name="option-3"> Антиблик + 1.200&#8381;
                 </label>
                 <label>
-                  <input type="checkbox" name="option-4"> Антиблик + Антиотпечатки + 1.600 P
+                  <input type="checkbox" name="option-4"> Антиблик + Антиотпечатки + 1.600&#8381;
                 </label>
                 <label>
                   <input type="checkbox" name="option-5"> Антиблик + Суперпрозрачное +
-                  Антиотпечатки + 2.100 P
+                  Антиотпечатки + 2.100&#8381;
                 </label>
               </div>
             </div>
@@ -490,7 +619,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -510,7 +639,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -530,7 +659,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -550,7 +679,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -570,7 +699,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -590,7 +719,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -610,7 +739,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -630,7 +759,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                      <span class="catalog__card-price">20 000 ₽</span>
+                   <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -763,25 +892,25 @@
       <div class="footer__right">
         <div class="footer__right-top">
           <ul class="footer__list">
-            <li>
+            <li class="footer__phone">
               <a class="footer__list-link icon-phone" href="tel:+88003026989">Звоните: 8 (800) 302-69-89</a>
             </li>
-            <li>
+            <li class="footer__email">
               <a class="footer__list-link icon-email" href="mailto:info@tachlab.ru">Пишите: info@tachlab.ru</a>
             </li>
-            <li>
+            <li class="footer__delivery">
               <a class="footer__list-link icon-delivery" href="#">Доставка</a>
             </li>
-            <li>
+            <li class="footer__info">
               <a class="footer__list-link icon-info" href="#">Информация</a>
             </li>
-            <li>
+            <li class="footer__whatsapp">
               <a class="footer__list-link icon-whatsapp" href="#">WhatsApp 8 (800) 302-69-89</a>
             </li>
-            <li>
+            <li class="footer__time">
               <a class="footer__list-link icon-time" href="#">Пн - Пт: с 10:00 до 18:00</a>
             </li>
-            <li>
+            <li class="footer__pay">
               <a class="footer__list-link icon-pay" href="#">Оплата</a>
             </li>
           </ul>
@@ -799,6 +928,83 @@
             </a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="footer-mob__container container">
+      <a class="footer__logo" href="./index.html">
+        <img src="./assets/images/icons/logo-footer.svg" alt="Логотип">
+        <span class="text-hidden">На главную</span>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__phone">
+          <a class="footer__list-link icon-phone" href="tel:+88003026989">Звоните: 8 (800) 302-69-89</a>
+        </li>
+        <li class="footer__whatsapp">
+          <a class="footer__list-link icon-whatsapp" href="#">WhatsApp 8 (800) 302-69-89</a>
+        </li>
+        <li class="footer__email">
+          <a class="footer__list-link icon-email" href="mailto:info@tachlab.ru">Пишите: info@tachlab.ru</a>
+        </li>
+        <li class="footer__time">
+          <a class="footer__list-link icon-time" href="#">Пн - Пт: с 10:00 до 18:00</a>
+        </li>
+      </ul>
+      <address class="footer__adress">
+        <a href="https://yandex.by/maps/-/CDqUMGnd" target="_blank">
+          Адрес офиса: г. Санкт-Петербург, шоссе Революции, дом 69, литер А, помещение 40-Н, офис 4
+        </a>
+      </address>
+      <ul class="footer__list">
+        <li class="footer__delivery">
+          <a class="footer__list-link icon-delivery" href="#">Доставка</a>
+        </li>
+        <li class="footer__pay">
+          <a class="footer__list-link icon-pay" href="#">Оплата</a>
+        </li>
+        <li class="footer__info">
+          <a class="footer__list-link icon-info" href="#">Информация</a>
+        </li>
+      </ul>
+      <div class="footer__socials">
+        <span>Мы в соцсетях:</span>
+        <ul class="footer__socials-list">
+          <li>
+            <a class="footer__socials-link" href="#">
+              <img src="./assets/images/icons/icon-vk.svg" alt="Вконтакте">
+              <span class="text-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="#">
+              <img src="./assets/images/icons/icon-youtube.svg" alt="Youtube">
+              <span class="text-hidden">Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="#">
+              <img src="./assets/images/icons/icon-telegram.svg" alt="Telegram">
+              <span class="text-hidden">Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="#">
+              <img src="./assets/images/icons/icon-dzen.svg" alt="Дзен">
+              <span class="text-hidden">Дзен</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__socials-link" href="#">
+              <img src="./assets/images/icons/icon-pinterest.svg" alt="Printerest">
+              <span class="text-hidden">Printerest</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__company">
+        <a href="https://web-ra.ru/" target="_blank">
+          <span>Разработано в Web-ra.com</span>
+          <img src="./assets/images/icons/icon-webra.svg" alt="Логотип Webra">
+        </a>
       </div>
     </div>
   </footer>

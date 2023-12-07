@@ -50,7 +50,7 @@ new Swiper('.likes__slider', {
       slidesPerView: 4,
     },
     1230: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 2,

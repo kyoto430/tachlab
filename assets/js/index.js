@@ -3,10 +3,22 @@ console.log('js running...');
 function openSubMenus() {
   if (window.innerWidth <= 1180) {
     let arrows = document.querySelectorAll('.arrow');
+    let backButton = document.querySelector('.menu__btn-back');
     arrows.forEach(function (element) {
+      let subMenu = element.nextElementSibling;
+      let menuLink = element.previousElementSibling;
+      let arrowActive = element;
       element.addEventListener('click', function () {
-        element.nextElementSibling.classList.toggle('open-submenu');
-        this.classList.toggle('arrow-active');
+        subMenu.classList.toggle('open-submenu');
+        arrowActive.classList.toggle('arrow-active');
+        backButton.classList.add('menu-visible');
+        menuLink.classList.toggle('menu__link-active');
+      });
+      backButton.addEventListener('click', function () {
+        subMenu.classList.remove('open-submenu');
+        backButton.classList.remove('menu-visible');
+        arrowActive.classList.remove('arrow-active');
+        menuLink.classList.remove('menu__link-active');
       });
     });
   }
@@ -56,7 +68,7 @@ function showAll() {
     const hiddenElements = document.querySelectorAll('.block-hidden');
     const opacityElements = document.querySelectorAll('.seo__inner-2');
     const hiddenElementsMob = document.querySelectorAll('.block-hidden-mob');
-    const opacityElementsMob = document.querySelectorAll('.block-oppacity');
+    const opacityElementsMob = document.querySelectorAll('.block-opacity');
 
     showMoreButtons.forEach(function (el) {
       el.addEventListener('click', function () {
@@ -104,21 +116,38 @@ function showAll() {
 showAll();
 
 function scrollTab(clickedTab) {
-  // Убрать класс 'active' у всех табов
   const allTabs = document.querySelectorAll('.tab');
   allTabs.forEach((tab) => {
     tab.classList.remove('props-active');
   });
-
-  // Добавить класс 'active' к выбранному табу
   clickedTab.classList.add('props-active');
 }
 
 function hideBlocks() {
-  const elements = document.querySelectorAll('.catalog-preview__card');
+  const catalogPreviewCards = document.querySelectorAll(
+    '.catalog-preview__card'
+  );
+  const catalogCards = document.querySelectorAll(
+    '.catalog__cards-wrapper .catalog__card'
+  );
   if (window.innerWidth <= 1180) {
-    for (let i = 4; i < elements.length; i += 1) {
-      elements[i].classList.add('block-hidden');
+    for (let i = 4; i < catalogPreviewCards.length; i += 1) {
+      catalogPreviewCards[i].classList.add('block-hidden');
+    }
+  }
+  if (window.innerWidth > 1180) {
+    for (let i = 6; i < catalogCards.length; i += 1) {
+      catalogCards[i].classList.add('block-hidden');
+    }
+  } else {
+    if (window.innerWidth <= 874 && window.innerWidth > 590) {
+      for (let i = 6; i < catalogCards.length; i += 1) {
+        catalogCards[i].classList.add('block-hidden');
+      }
+    } else {
+      for (let i = 4; i < catalogCards.length; i += 1) {
+        catalogCards[i].classList.add('block-hidden');
+      }
     }
   }
 }
