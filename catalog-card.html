@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="keywords">
   <meta name="description" content="content">
-  <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
   <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
@@ -284,7 +287,8 @@
             <a class="breadcrumb__link" href="./index.html">Главная</a>
           </li>
           <li>
-            <a class="breadcrumb__link breadcrumb__link--active" href="./catalog.html">Каталог</a>
+            <a class="breadcrumb__link" href="./catalog.html">Каталог</a>
+            <span class="breadcrumb-arrow"></span>
             <ul class="bread-menu__list">
               <li>
                 <a class="bread-menu__link link" href="./catalog-card.html">Встраиваемый сенсорный монитор</a>
@@ -317,6 +321,7 @@
           </li>
           <li>
             <a class="breadcrumb__link" href="./catalog-card.html">Встраиваемый сенсорный монитор</a>
+            <span class="breadcrumb-arrow"></span>
             <ul class="bread-menu__list">
               <li>
                 <a class="bread-menu__link link" href="./catalog-card.html">10.1”, черный, PCAP, 700 нит, 3840x2160,
@@ -343,6 +348,7 @@
         </ul>
       </div>
     </div>
+
     <section class="preview-card">
       <div class="preview-card__wrapper container">
         <h2 class="catalog__title-1">10.1″ Встраиваемый сенсорный монитор</h2>
@@ -452,6 +458,7 @@
     <div class="tabs-cards">
       <div class="tabs__wrapper container">
         <div class="tabs">
+          <span class="btn-tab"></span>
           <a href="#props" class="tab" onclick="scrollTab(this)">Характеристики</a>
           <a href="#desc" class="tab" onclick="scrollTab(this)">Описание</a>
           <a href="#docs" class="tab" onclick="scrollTab(this)">Документация</a>
@@ -659,7 +666,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -679,7 +686,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -699,7 +706,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -719,7 +726,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -739,7 +746,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -759,7 +766,7 @@
                     <div class="catalog__card-desc">
                       <p class="catalog__card-title">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
                       <span class="catalog__card-code">арт. 00000000000-0000</span>
-                   <span class="catalog__card-price">20 000&#8381;</span>
+                      <span class="catalog__card-price">20 000&#8381;</span>
                     </div>
                   </a>
                   <div class="catalog__card-buttons">
@@ -943,7 +950,8 @@
           <a class="footer__list-link icon-whatsapp" href="#">WhatsApp 8 (800) 302-69-89</a>
         </li>
         <li class="footer__email">
-          <a class="footer__list-link icon-email" href="mailto:info@tachlab.ru">Пишите: info@tachlab.ru</a>
+          <a class="footer__list-link icon-email"
+            href="mailto:info@tachlab.ru">Пишите:&nbsp;<span>info@tachlab.ru</span></a>
         </li>
         <li class="footer__time">
           <a class="footer__list-link icon-time" href="#">Пн - Пт: с 10:00 до 18:00</a>

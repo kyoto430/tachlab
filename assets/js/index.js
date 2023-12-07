@@ -1,8 +1,17 @@
 console.log('js running...');
 
+function checked() {
+  if (document.getElementById('accordeon-item-1') && window.innerWidth <= 768) {
+    document.getElementById('accordeon-item-1').checked = false;
+  }
+}
+
+checked();
+
 function openSubMenus() {
   if (window.innerWidth <= 1180) {
     let arrows = document.querySelectorAll('.arrow');
+    let breadcrumbsArrows = document.querySelectorAll('.breadcrumb-arrow');
     let backButton = document.querySelector('.menu__btn-back');
     arrows.forEach(function (element) {
       let subMenu = element.nextElementSibling;
@@ -19,6 +28,16 @@ function openSubMenus() {
         backButton.classList.remove('menu-visible');
         arrowActive.classList.remove('arrow-active');
         menuLink.classList.remove('menu__link-active');
+      });
+    });
+    breadcrumbsArrows.forEach(function (element) {
+      let breadSubMenu = element.nextElementSibling;
+      let breadLink = element.previousElementSibling;
+      if (breadLink.classList.contains('breadcrumb__link--active')) {
+        element.classList.add('arrow-blue');
+      }
+      element.addEventListener('click', function () {
+        breadSubMenu.classList.toggle('open-submenu');
       });
     });
   }
