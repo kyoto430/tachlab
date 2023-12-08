@@ -81,3 +81,25 @@ new Swiper('.preview-card__slider-2', {
     nextEl: '.slider__btn-next--4',
   },
 });
+
+if (window.innerWidth <= 910) {
+  new Swiper('.tabs__slider', {
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      590: {
+        slidesPerView: 2,
+      },
+      375: {
+        slidesPerView: 2,
+      }
+    },
+    uniqueNavElements: false,
+    navigation: {
+      prevEl: '.slider__btn-prev--5',
+      nextEl: '.slider__btn-next--5',
+    },
+  });
+}
