@@ -36,7 +36,6 @@ new Swiper('.preview__slider', {
 });
 
 new Swiper('.likes__slider', {
-  loop: true,
   navigation: {
     prevEl: '.slider__btn-prev--3',
     nextEl: '.slider__btn-next--3',
@@ -56,7 +55,16 @@ new Swiper('.likes__slider', {
       slidesPerView: 2,
     },
     375: {
-      slidesPerView: 1,
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+    },
+    340: {
+      slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
     },
   },
 });
@@ -94,7 +102,7 @@ if (window.innerWidth <= 910) {
       },
       375: {
         slidesPerView: 2,
-      }
+      },
     },
     uniqueNavElements: false,
     navigation: {

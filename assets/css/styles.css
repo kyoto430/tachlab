@@ -2027,6 +2027,18 @@ img {
     font-size: var(--fs-10);
   }
 
+  .tabs__slider-wrapper {
+    gap: 8px;
+  }
+
+  .tabs__slider-wrapper .swiper-slide {
+    width: max-content !important;
+  }
+
+  .tabs__slider-wrapper .swiper-slide:nth-child(4) {
+    min-width: max-content;
+  }
+
   .description__text-wrapper {
     font-size: var(--fs-10);
   }
@@ -2546,6 +2558,25 @@ img {
 @media (max-width: 1180px) {
   .likes {
     margin-top: 48px;
+  }
+}
+
+@media (max-width: 590px) {
+  .likes__slider-wrapper {
+    flex-direction: row !important;
+  }
+
+  .likes__slider-wrapper .catalog__card {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .likes__slider-wrapper .likes__slider-wrapper .swiper-slide {
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
