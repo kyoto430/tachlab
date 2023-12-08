@@ -90,7 +90,7 @@ if (window.innerWidth <= 910) {
         slidesPerView: 3,
       },
       590: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       375: {
         slidesPerView: 2,
