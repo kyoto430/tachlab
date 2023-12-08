@@ -1792,7 +1792,7 @@ img {
   }
 
   .preview-card__wrapper .catalog__title-1::after {
-    width: 38%;
+    width: 20%;
   }
 
   .preview-card__inner .slider__wrapper {
@@ -2452,12 +2452,16 @@ img {
 }
 
 @media (max-width: 874px) {
+  .catalog__title-2::after {
+    width: 50%;
+  }
+
   .catalog__inner {
     flex-direction: column;
   }
 
   .catalog__cards {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 
@@ -2561,11 +2565,13 @@ img {
   }
 }
 
-@media (max-width: 590px) {
+@media (max-width: 768px) {
   .likes__slider-wrapper {
     flex-direction: row !important;
   }
+}
 
+@media (max-width: 590px) {
   .likes__slider-wrapper .catalog__card {
     width: 100%;
     max-width: 100%;
