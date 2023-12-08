@@ -84,7 +84,7 @@ new Swiper('.preview-card__slider-2', {
 
 if (window.innerWidth <= 910) {
   new Swiper('.tabs__slider', {
-    slidesPerView: 1,
+    slidesPerView: 1.7,
     breakpoints: {
       768: {
         slidesPerView: 3,
