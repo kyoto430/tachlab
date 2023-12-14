@@ -20,7 +20,7 @@
   <title>Tachlab</title>
 </head>
 
-<body>
+<body id="catalog-card">
   <header class="header container-xl">
     <div class="header__container container">
       <nav class="main-mob__nav">
@@ -175,34 +175,6 @@
             <ul class="sub-menu__list">
               <li>
                 <a class="sub-menu__link link" href="./catalog.html">Встраиваемый сенсорный монитор</a>
-                <div class="sub-submenu__item">
-                  <div class="sub-submenu__cards">
-                    <div class="sub-submenu__card">
-                      <a href="./catalog-card.html">
-                        <img src="./assets/images/card/01.jpg" alt="01">
-                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                      </a>
-                    </div>
-                    <div class="sub-submenu__card">
-                      <a href="./catalog-card.html">
-                        <img src="./assets/images/card/01.jpg" alt="01">
-                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                      </a>
-                    </div>
-                    <div class="sub-submenu__card">
-                      <a href="./catalog-card.html">
-                        <img src="./assets/images/card/01.jpg" alt="01">
-                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                      </a>
-                    </div>
-                    <div class="sub-submenu__card">
-                      <a href="./catalog-card.html">
-                        <img src="./assets/images/card/01.jpg" alt="01">
-                        <p class="sub-submenu__card-text">10.1”, черный, PCAP, 700 нит, 3840x2160, антиблик</p>
-                      </a>
-                    </div>
-                  </div>
-                </div>
               </li>
               <li>
                 <a class="sub-menu__link link" href="#">Настенный сенсорный монитор</a>
@@ -321,25 +293,6 @@
           </li>
           <li>
             <a class="breadcrumb__link" href="./catalog-card.html">Встраиваемый сенсорный монитор</a>
-            <span class="breadcrumb-arrow"></span>
-            <ul class="bread-menu__list">
-              <li>
-                <a class="bread-menu__link link" href="./catalog-card.html">10.1”, черный, PCAP, 700 нит, 3840x2160,
-                  антиблик</a>
-              </li>
-              <li>
-                <a class="bread-menu__link link" href="./catalog-card.html">10.1”, черный, PCAP, 700 нит, 3840x2160,
-                  антиблик</a>
-              </li>
-              <li>
-                <a class="bread-menu__link link" href="./catalog-card.html">10.1”, черный, PCAP, 700 нит, 3840x2160,
-                  антиблик</a>
-              </li>
-              <li>
-                <a class="bread-menu__link link" href="./catalog-card.html">10.1”, черный, PCAP, 700 нит, 3840x2160,
-                  антиблик</a>
-              </li>
-            </ul>
           </li>
           <li>
             <a class="breadcrumb__link breadcrumb__link--active" href="./catalog-card.html">10.1″ Встраиваемый сенсорный
@@ -439,17 +392,17 @@
                 </label>
               </div>
             </div>
-            <div class="catalog__card-buttons">
-              <div class="catalog__card-left">
-                <button class="catalog__btn-minus" onclick="decrement('counter1')"><span></span></button>
-                <span class="catalog__card-value" id="counter1">1</span>
-                <button class="catalog__btn-pluse" onclick="increment('counter1')"><span></span></button>
+            <div class="catalog__card-buttons--preview">
+              <div class="catalog__card-left--preview">
+                <button class="catalog__btn-minus--preview" onclick="decrement('counter1')"><span></span></button>
+                <span class="catalog__card-value--preview" id="counter1">1</span>
+                <button class="catalog__btn-pluse--preview" onclick="increment('counter1')"><span></span></button>
               </div>
-              <button class="catalog__btn-cart">В корзину</button>
+              <button class="catalog__btn-cart--preview">В корзину</button>
             </div>
             <div class="fast__buttons">
-              <a class="fast__btn" href="#">Купить в один клик</a>
-              <a class="fast__btn" href="#">Запросить оптовую цену</a>
+              <a class="fast__btn popup-link" href="#popup-buy">Купить в один клик</a>
+              <a class="fast__btn popup-link" href="#popup-price">Запросить оптовую цену</a>
             </div>
           </div>
         </div>
@@ -470,19 +423,19 @@
       <div class="tabs__slider swiper">
         <div class="swiper-wrapper tabs__slider-wrapper container">
           <div class="swiper-slide">
-            <a href="#props" class="tab" onclick="scrollTab(this)">Характеристики</a>
+            <button class="tab active-tab props-active" onclick="changeTab('props', this)">Характеристики</button>
           </div>
           <div class="swiper-slide">
-            <a href="#desc" class="tab" onclick="scrollTab(this)">Описание</a>
+            <button class="tab" onclick="changeTab('desc', this)">Описание</button>
           </div>
           <div class="swiper-slide">
-            <a href="#docs" class="tab" onclick="scrollTab(this)">Документация</a>
+            <button class="tab" onclick="changeTab('docs', this)">Документация</button>
           </div>
           <div class="swiper-slide">
-            <a href="#items" class="tab" onclick="scrollTab(this)">Сопутствующие товары</a>
+            <button class="tab" onclick="changeTab('items', this)">Сопутствующие товары</button>
           </div>
           <div class="swiper-slide">
-            <a href="#delivery" class="tab" onclick="scrollTab(this)">Доставка</a>
+            <button class="tab" onclick="changeTab('delivery', this)">Доставка</button>
           </div>
         </div>
         <div class="tabs__slider-nav">
@@ -491,8 +444,8 @@
         </div>
       </div>
     </div>
-    <section class="props">
-      <div class="props-content container" id="props">
+    <section class="props tab-content active-tab" id="props">
+      <div class="props-content container">
         <h2 class="catalog__title-2">Характеристики</h2>
         <div class="props-content__inner">
           <ul class="props-content__list">
@@ -574,7 +527,7 @@
         </div>
       </div>
     </section>
-    <section class="description" id="desc">
+    <section class="description tab-content" id="desc">
       <div class="description__wrapper container">
         <h2 class="catalog__title-2">Описание</h2>
         <div class="description__inner">
@@ -614,7 +567,7 @@
         </div>
       </div>
     </section>
-    <section class="documents" id="docs">
+    <section class="documents tab-content" id="docs">
       <div class="documents__wrapper container">
         <h2 class="catalog__title-2">Документация</h2>
         <ul class="documents__list">
@@ -636,7 +589,7 @@
         </ul>
       </div>
     </section>
-    <section class="likes" id="items">
+    <section class="likes tab-content" id="items">
       <div class="likes__wrapper container">
         <h2 class="catalog__title-2">Вам может понравиться</h2>
         <!-- SLIDER -->
@@ -813,7 +766,7 @@
         <!-- SLIDER END -->
       </div>
     </section>
-    <section class="delivery" id="delivery">
+    <section class="delivery tab-content" id="delivery">
       <div class="delivery__wrapper container">
         <h2 class="catalog__title-2">Доставка</h2>
         <div class="delivery__inner">
@@ -870,7 +823,6 @@
           </div>
           <button class="feedback__btn">Отправить</button>
           <div class="feedback__inner">
-            <a class="feedback__link" href="#">Сообщить о нарушении</a>
             <span>Нажимая кнопку “Отправить” вы даете согласие на обработку данных</span>
           </div>
         </form>
@@ -1042,5 +994,65 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
+<!-- POPUPS -->
+<div id="popup-buy" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close close-popup"></a>
+      <div class="popup__wrapper">
+        <div class="popup__wrapper-text">
+          <p class="popup__title">Купить в один клик</p>
+        </div>
+        <form class="popup__form">
+          <div class="popup__inputs">
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" id="phone-modal" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" id="email-modal" placeholder="">
+            </label>
+          </div>
+          <label class="popup__check">
+            <input type="checkbox" name="check" id="check" checked>
+            <span>Я согласен на обработку персональных данных</span>
+          </label>
+          <button class="popup__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="popup-price" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close close-popup"></a>
+      <div class="popup__wrapper">
+        <div class="popup__wrapper-text">
+          <p class="popup__title">Запрос оптовой цены</p>
+        </div>
+        <form class="popup__form">
+          <div class="popup__inputs">
+            <label>
+              <span>Телефон</span>
+              <input type="tel" name="phone" id="phone-modal-2" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" id="email-modal-2" placeholder="">
+            </label>
+          </div>
+          <label class="popup__check">
+            <input type="checkbox" name="check" id="check-2" checked>
+            <span>Я согласен на обработку персональных данных</span>
+          </label>
+          <button class="popup__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- POPUPS END-->
 
 </html>
