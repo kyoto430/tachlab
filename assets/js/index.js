@@ -80,44 +80,46 @@ function showAllSeo() {
     const hiddenElementsMob = document.querySelectorAll('.block-hidden-mob');
     const opacityElementsMob = document.querySelectorAll('.block-opacity');
 
-    showMoreSeoButton.addEventListener('click', function () {
-      hiddenElements.forEach(function (element) {
-        if (element.style.transform !== 'scale(1)') {
-          opacityElements.forEach(function (el) {
-            el.style.opacity = '1';
-          });
-          element.style.position = 'initial';
-          element.style.transform = 'scale(1)';
-          showMoreSeoButton.innerText = 'Скрыть';
-          showMoreSeoButton.style.marginTop = '0px';
-        } else {
-          opacityElements.forEach(function (el) {
-            el.style.opacity = '0.3';
-          });
-          element.style.position = 'absolute';
-          element.style.transform = 'scale(0)';
-          showMoreSeoButton.innerText = 'Показать больше';
-          showMoreSeoButton.style.marginTop = '-30px';
-        }
-      });
-      if (window.innerWidth <= 768) {
-        hiddenElementsMob.forEach(function (element) {
+    if (showMoreSeoButton) {
+      showMoreSeoButton.addEventListener('click', function () {
+        hiddenElements.forEach(function (element) {
           if (element.style.transform !== 'scale(1)') {
-            opacityElementsMob.forEach(function (el) {
+            opacityElements.forEach(function (el) {
               el.style.opacity = '1';
             });
             element.style.position = 'initial';
             element.style.transform = 'scale(1)';
+            showMoreSeoButton.innerText = 'Скрыть';
+            showMoreSeoButton.style.marginTop = '0px';
           } else {
-            opacityElementsMob.forEach(function (el) {
+            opacityElements.forEach(function (el) {
               el.style.opacity = '0.3';
             });
             element.style.position = 'absolute';
             element.style.transform = 'scale(0)';
+            showMoreSeoButton.innerText = 'Показать больше';
+            showMoreSeoButton.style.marginTop = '-30px';
           }
         });
-      }
-    });
+        if (window.innerWidth <= 768) {
+          hiddenElementsMob.forEach(function (element) {
+            if (element.style.transform !== 'scale(1)') {
+              opacityElementsMob.forEach(function (el) {
+                el.style.opacity = '1';
+              });
+              element.style.position = 'initial';
+              element.style.transform = 'scale(1)';
+            } else {
+              opacityElementsMob.forEach(function (el) {
+                el.style.opacity = '0.3';
+              });
+              element.style.position = 'absolute';
+              element.style.transform = 'scale(0)';
+            }
+          });
+        }
+      });
+    }
   });
 }
 
@@ -126,13 +128,27 @@ showAllSeo();
 function showAll() {
   document.addEventListener('DOMContentLoaded', function () {
     const showMoreButtons = document.querySelectorAll('.btn-show');
-    const hiddenElements = document.querySelectorAll(
+    const hiddenPreviewElements = document.querySelectorAll(
       '.catalog-preview .block-hidden'
+    );
+    const hiddenCatalogElements = document.querySelectorAll(
+      '.catalog .block-hidden'
     );
 
     showMoreButtons.forEach(function (el) {
       el.addEventListener('click', function () {
-        hiddenElements.forEach(function (element) {
+        hiddenPreviewElements.forEach(function (element) {
+          if (element.style.transform !== 'scale(1)') {
+            element.style.position = 'initial';
+            element.style.transform = 'scale(1)';
+            el.innerText = 'Скрыть';
+          } else {
+            element.style.position = 'absolute';
+            element.style.transform = 'scale(0)';
+            el.innerText = 'Показать больше';
+          }
+        });
+        hiddenCatalogElements.forEach(function (element) {
           if (element.style.transform !== 'scale(1)') {
             element.style.position = 'initial';
             element.style.transform = 'scale(1)';
