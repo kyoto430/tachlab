@@ -132,7 +132,8 @@ img {
   display: block;
 }
 
-.btn-show {
+.btn-show,
+.btn-show--text {
   max-width: 200px;
   display: flex;
   justify-content: center;
@@ -149,7 +150,8 @@ img {
   transition: color 0.3s ease;
 }
 
-.btn-show:hover {
+.btn-show:hover,
+.btn-show--text:hover {
   color: var(--color-blue-2);
 }
 
@@ -3285,7 +3287,8 @@ img {
     justify-content: flex-start;
   }
 
-  .btn-show {
+  .btn-show,
+  .btn-show--text {
     font-size: var(--fs-10);
   }
 }
@@ -3833,7 +3836,7 @@ img {
   list-style-position: inside;
 }
 
-.seo__wrapper .btn-show {
+.seo__wrapper .btn-show--text {
   margin-top: -30px;
 }
 
