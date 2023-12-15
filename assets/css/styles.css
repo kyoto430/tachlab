@@ -398,7 +398,20 @@ img {
 }
 
 .accordeon__show-btn {
-  display: none;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--color-blue);
+  text-transform: uppercase;
 }
 
 @media (max-width: 1180px) {
@@ -458,23 +471,6 @@ img {
     align-self: flex-end;
     background: url(../images/icons/icon-close.svg) center/32px no-repeat;
     transition: all 0.3s ease-in-out;
-  }
-
-  .accordeon__show-btn {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60px;
-    color: var(--color-white);
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 3px;
-    border: none;
-    background-color: var(--color-blue);
-    text-transform: uppercase;
   }
 }
 
@@ -662,15 +658,11 @@ img {
 /* HEADER */
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: var(--color-gray-1);
   z-index: 100;
-}
-
-.header.fixed {
-  position: fixed;
-  top: 0;
 }
 
 .main-mob__nav {
@@ -1141,26 +1133,6 @@ img {
     position: absolute;
     transform: scale(0);
   }
-
-  /* .menu__burger.active span {
-    transform: scale(0);
-  }
-
-  .menu__burger.active:before {
-    width: 100%;
-    transform: rotate(45deg);
-    top: 9px;
-  }
-
-  .menu__burger.active:after {
-    width: 100%;
-    transform: rotate(-45deg);
-    bottom: 9px;
-  }
-
-  .menu__burger.active > span {
-    background-color: var(--color-blue);
-  } */
 
   .main__nav-menu.active {
     transform: translateX(0);
@@ -2974,7 +2946,7 @@ img {
 /* PREVIEW */
 
 .preview {
-  margin-top: 35px;
+  margin-top: 112px;
 }
 
 .preview__slider {
@@ -3051,7 +3023,7 @@ img {
 
 @media (max-width: 1180px) {
   .preview {
-    margin-top: 30px;
+    margin-top: 90px;
   }
 
   .preview__slider-item {
@@ -3089,7 +3061,7 @@ img {
   }
 
   .preview {
-    margin-top: 16px;
+    margin-top: 76px;
   }
 
   .preview__slider-item {

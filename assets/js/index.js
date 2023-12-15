@@ -1,17 +1,5 @@
 console.log('js running...');
 
-document.addEventListener('DOMContentLoaded', function () {
-  window.addEventListener('scroll', function () {
-    const header = document.querySelector('.header');
-    const content = document.querySelector('.main');
-    if (window.scrollY >= content.offsetTop) {
-      header.classList.add('fixed');
-    } else {
-      header.classList.remove('fixed');
-    }
-  });
-});
-
 function openSubMenus() {
   let arrows = document.querySelectorAll('.arrow');
   let breadcrumbsArrows = document.querySelectorAll('.breadcrumb-arrow');
